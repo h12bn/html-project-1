@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>document</title>
+<link rel="stylesheet" href="cont.css">
+</head>
+<body>
+<div class="counter-box">
+<h1>counter</h1>
+<h1 class="counter">0</h1>
+<div id="btns">
+  <button type="button" class="btn" id="lowerCountBtn">lower count</button>
+  <button type="button" class="btn" id="addCountBtn">Add count</button>
+</div>
+</div>
+
+  <script type="text/javascript">
+
+
+  var count = 1;
+  document.getElementById("counter").innerHTML = count;
+
+  document.getElementById("addCountBtn").addEventListener('click',incrementCounter);
+  document.getElementById("lowerCountBtn").addEventListener('click', decrementCounter);
+
+  function incrementCounter(){
+      count++;
+      document.getElementById("counter").innerHTML = count;
+      console.log("count :", count);
+
+  }
+
+  function decrementCounter() {
+      count--;
+      document.getElementById("counter").innerHTML = count;
+      console.log("count", count);
+
+  }
+  </script>
+</body>
+</html>

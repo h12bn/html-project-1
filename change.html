@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>welcome to javascript</title>
+<meta charset="UTF_8">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<h1><em>Welcome to our magical page</em></h1>
+<p><em>You can change color in second</em></p>
+
+<button type="button" class="colorBtn" > Click her to change color </button>
+<img src="https://3.bp.blogspot.com/-V4Z-sjlUhfE/WVrNeYrAt2I/AAAAAAAAAo8/F7aWYsReCT0QcPbfLQClGPCXdl45_xZuACLcBGAs/s1600/oie_oie_glitters.gif" />
+
+
+ <script type="text/javascript">
+const colorBtn = document.querySelector(.'colorBtn');
+const bodyBcg = document.querySelector('body');
+const colors = ['yellow' ,'red' ,'#ecb3ff' ,' blue' ,'#ffb3b3' ,'pink'];
+colorBtn.addEventListener('click' ,changeColor);
+function changeColor(){
+  let random= Math.floor(Math.random()*colors.length)
+  bodyBcg.style.backgroundColor= colors[random];
+}
+
+
+ </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+const colorBtn = document.querySelector('.colorBtn');
+const bodyBcg = document.querySelector('body');
+
+const colors =['yellow','red','green','white','blue','brown','black'];
+colorBtn.addEventListener('click',changeColor);
+function changeColor (){
+  //bodyBcg.style.background= colors[];
+  let random= Math.floor(Math.random()*colors.length)
+  bodyBcg.style.backgroundColor = colors[random];
+};
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Send my message please </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="pro.css">
+</head>
+<body>
+<div class="container">
+<h1><em>Message You Would Like To Send Me</em></h1>
+<input type="text" name="messageIn" id="messageIn">
+<button type="button" id="sendBtn"><em>Press To Send</em></button>
+<h1><em>Thank You </em></h1>
+ <h1 id="messageOut"></h1>
+ </div>
+ <script type="text/javascript">
+
+const sendBtn = document. querySelector('#sendBtn');
+const messageIn = document.querySelector('#messageIn');
+const messageOut = document.querySelector('messageOut');
+
+sendBtn.addEventListener('click', sendMsg)
+ function sendMsg() {
+   let content = messageIn.value;
+   if(content === ''){
+     alert('please enter a message')
+   }
+   else {
+  document.getElementById("messageOut").innerHtml = content;
+   messageIn.value = '';
+}
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+ </body>
+ </html>

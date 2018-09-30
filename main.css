@@ -1,0 +1,44 @@
+body {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.colorBtn {
+padding: 0.25rem 0.5rem;
+border: 3px solid #fefefe;
+border-radius: 7px;
+color: black;
+background: rgba(0,0,0,0,6);
+font-size: 1.85rem;
+text-transform: capitalize;
+cursor: pointer;
+outline: none;
+
+}
+.colorBtn:hover{
+background: gray;
+}
+
+
+
+h1 {
+  position: absolute;
+  left: 21%;
+   top: 1%;
+   font-size: 69px;
+}
+p {
+  position: absolute;
+  left: 27%;
+   top: 19%;
+   font-size: 50px;
+
+}
+img {
+  position: absolute;
+  left: 42%;
+   top: 66%;
+  
+}
